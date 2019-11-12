@@ -1,0 +1,23 @@
+// BASE TAGS
+*{
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+p{
+    margin: 0;
+}
+li{
+    list-style: none
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+// BASE ELEMENTS
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 48px;
+    width: 100%
+}

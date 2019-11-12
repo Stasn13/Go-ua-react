@@ -1,0 +1,65 @@
+#tour{
+    height: 100vh;
+    background: url('../images/orange_cat_studio_4\ \(1\).jpg')  rgba(35, 19, 0, 0.5) center no-repeat / 100%; 
+    background-blend-mode: multiply;
+    
+    overflow: hidden;
+    position: relative;
+    .container{
+        header{
+            padding: 55px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 35px;
+            color: #fff;
+            font-weight: 600;
+            .burger{
+                .burger-line{
+                    width: 32px;
+                    height: 3.25px;
+                    background-color: #fff;
+                    margin-bottom: 6.75px;
+                }
+            }
+        }
+
+        .days{
+          
+          .days-slide{
+            font-size: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            height: 400px;
+            width: 200px;
+          }
+        }
+        .services{
+            position: absolute;
+            bottom: -5%;
+            .service-cards {
+                display: flex;
+              }
+              .card {
+                background: white;
+                border-radius: 7px;
+                //padding: 1.5rem;
+                //box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+                transition: 0.2s;
+                height: 300px;
+                width: 205px;
+              }
+              .card:not(:first-child) {
+                margin-left: -2rem;
+              }
+              .card:not(:last-child):hover,
+              .card:not(:last-child):focus-within {
+                transform: translateY(-3rem);
+                //height: 450px;
+                //width: 320px;
+                ~ .card {
+                  transform: translateX(2rem);
+                }
+              }
+        }
+    }
+}
